@@ -1,0 +1,21 @@
+x=input()
+y=x.split(":")
+if(x[-2:]=="AM"):
+    if(y[0]=="12"):
+        a=x.replace("12","00")
+        g=a.replace("AM","")
+        print(g)
+    else:
+        b=x.replace("AM","")
+        print(b)
+elif(x[-2:]=="PM"):
+    y[0]=str(int(y[0])+12)
+    c=":".join(y)
+    d=c.replace("PM","")
+    if(d[0:2]=="24"):
+        f=d.replace("24","12")
+        print(f)
+    else:
+        print(d)
+else:
+    pass

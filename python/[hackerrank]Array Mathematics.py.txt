@@ -1,0 +1,12 @@
+import numpy as np
+nm=input().split()
+n=int(nm[0])
+a=np.array([input().split() for _ in range(n)],int)
+b=np.array([input().split() for _ in range(n)],int)
+np.set_printoptions(legacy='1.13')
+print(np.add(a,b))
+print(np.subtract(a,b))
+print(np.multiply(a,b))
+print(a//b)
+print(np.mod(a,b))
+print(np.power(a,b))
